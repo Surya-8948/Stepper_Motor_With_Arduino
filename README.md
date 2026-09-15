@@ -5,7 +5,15 @@ A beginner to advanced Arduino project for learning and controlling **Stepper Mo
 This repository is designed for students, hobbyists, robotics enthusiasts, and embedded engineers who want to understand the complete working of stepper motors from scratch.
 
 ---
+<h2 align="center">NEMA 17 + A4988 + Arduino Wiring Diagram</h2>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Surya-8948/Stepper_Motor_With_Arduino/main/Nema17_Arduino.png" width="750">
+</p>
+
+<p align="center">
+  Complete wiring diagram of Arduino UNO with NEMA 17 Stepper Motor and A4988 Driver.
+</p>
 # 📌 Features
 
 * ✅ Stepper Motor Basics
