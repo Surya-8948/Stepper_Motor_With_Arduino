@@ -1,11 +1,13 @@
 #include <AccelStepper.h>
-#define STEP_PIN 2
+#define STEP_PIN 4
 #define DIR_PIN 3
-#define EN_PIN 8
-#define MS1_PIN 4
-#define MS2_PIN 5
-#define MS3_PIN 6
+#define EN_PIN 2
+#define MS1_PIN 5
+#define MS2_PIN 6
+#define MS3_PIN 7
 AccelStepper stepper(AccelStepper::DRIVER, STEP_PIN, DIR_PIN);
+int currentMicrostep = 1;
+
 void setup()
 {
   Serial.begin(115200);
@@ -87,8 +89,6 @@ void rotateOneRevolution()
   Serial.print(steps);
   Serial.println(" steps");
 }
-
-int currentMicrostep = 1;
 
 void setMicrostep(int mode)
 {
