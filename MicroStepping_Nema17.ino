@@ -6,6 +6,8 @@
 #define MS2_PIN 5
 #define MS3_PIN 6
 AccelStepper stepper(AccelStepper::DRIVER, STEP_PIN, DIR_PIN);
+int currentMicrostep = 1;
+
 void setup()
 {
   Serial.begin(115200);
@@ -87,8 +89,6 @@ void rotateOneRevolution()
   Serial.print(steps);
   Serial.println(" steps");
 }
-
-int currentMicrostep = 1;
 
 void setMicrostep(int mode)
 {
